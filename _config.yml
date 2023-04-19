@@ -43,16 +43,128 @@ primary_navigation:
   - name: Home
     description: IDmanagement.gov
     url: /
-  - name: Partners
+# WhyFICAM? top level menu with dropdowns
+  - name: Why FICAM?
     children:
+      - name: Introduction
+        url: /why/introduction/
+      - name: Architecture
+        url: /why/architecture/
+      - name: History
+        url: /why/history/
+      - name: ICAM
+        url: /why/icam/
+      - name: Goals and Objectives
+        url: /why/goals-and-objectives/
+
+      # - name: Identity Management
+      #   url: /why/identity-management/
+      # - name: Credential Management
+      #   url: /why/credential-management/
+      # - name: Access Management
+      #   url: /why/access-management/
+      # - name: Federation
+      #   url: /why/federation/
+      # - name: Governance
+      #   url: /why/governance/
+      # - name: Use Cases
+      #   url: /why/use-cases/
+      # - name: System Component Examples
+      #   url: /why/system-component-examples/
+      # - name: Authoritative Sources
+      #   url: /why/authoritative-sources/
+      # - name: Federation Overview
+      #   url: /why/federation-overview/
+
+# What is FICAM top level menu with dropdowns
+  - name: What is FICAM?
+    children: 
+      - name: Introduction
+        url: /what/introduction/
+      - name: Products
+        url: /what/products/
+      - name: Services
+        url: /what/services/
+      - name: PIV Details
+        url: /what/pivdetails/
+      - name: Service Framework
+        url: /what/servicesframework/
+      - name: Use Cases
+        url: /what/usecases/
+      # - name: Organizations that offer ICAM services
+      #   url: /what/organizations-that-offer-icam-services/
+      # - name: Personal Identity Verification (PIV) Cards
+      #   url: /what/personal-identity-verification-piv-cards/
+      # - name: User Guides
+      #   url: /what/user-guides/
+      # - name: Physical Access Control System (PACS) 
+      #   url: /what/physical-access-control-system-pacs/ 
+      # - name: GSA Multiple Award Schedule
+      #   url: /what/gsa-multiple-award-schedule/
+      # - name: Trust Services
+      #   url: /what/trust-services/
+      # - name: GSA ICAM Solutions and Shared Services
+      #   url: /what/gsa-icam-solutions-and-shared-services/
+      # - name: FIPS 201 Removed Product List
+      #   url: /what/fips-201-removed-product-list/
+      # - name: Credential Management & Overview
+      #   url: /what/credential-management-overview/
+      # - name: Access Management & Overview
+      #   url: /what/access-management-overview/
+
+# How to use FICAM top level menu with dropdowns
+  - name: How to use FICAM
+    children:
+      - name: Introduction
+        url: /how/introduction/
+      - name: Network Authentication
+        url: /how/network-authentication/
+      - name: Domain Controllers
+        url: /how/domain-controllers/
+      - name: Trust Store
+        url: /how/trust-stores/
+      - name: Account Linking
+        url: /how/account-linking/
+      - name: Group Policies and Enforcement
+        url: /how/group-policies/
+      - name: Network Tuning
+        url: /how/network-tuning/
+      - name: Local Certification Authority
+        url: /how/certificate-authority/
+      - name: Authentication Assurance
+        url: /how/authentication-assurance/
+      - name: PIV Authentication on macOS
+        url: /how/piv-athentication-macos/
+      - name: Troubleshooting PIV Logon
+        url: /how/troubleshooting/ 
+      # - name: Windows Domain Account Pairing
+      #   url: /how/windows-domain-pairing/ 
+
+# Who FICAM is For? top level menu with dropdowns
+  - name: Who is FICAM For?
+    children:
+      - name: New? Get Started
+        url: /who/new-get-started/
+      - name: Technical Leads and Team Members
+        url: /who/technical-leads-and-team-members/
+      - name: PACS
+        url: /who/pacs/
       - name: Vendors
-        url: /sell/
+        url: /who/vendors/
       - name: Acquisition Professionals
-        url: /buy/
-      - name: Program Managers
-        url: /governance/
-  - name: Approved Product List
-    url: /buy#products
+        url: /who/acquisition-professionals/
+      - name: Program Manager
+        url: /who/program-manager/
+  
+  # FICAM University page
+  - name: University
+    description: University
+    url: /university/
+
+  # FAQ page
+  - name: FAQs
+    description: Frequently Asked Questions
+    url: /faq/
 
 secondary_navigation:
   - name: Contact Us
@@ -87,15 +199,38 @@ searchgov:
 ##########################################################################################
 
 collections:
-  buy:
+  why:
     output: true
-    permalink: /buy/:path/
-  sell:
+    permalink: /why/:path/
+  what:
     output: true
-    permalink: /sell/:path/
-  governance:
+    permalink: /what/:path/
+  how:
     output: true
-    permalink: /governance/:path/
+    permalink: /how/:path/
+  who:
+    output: true
+    permalink: /who/:path/
+  university:
+    output: true
+    permalink: /university/:path/   
+  faq:
+    output: true
+    permalink: /faq/:path/ 
+  rss:
+    output: true
+    permalink: /news/:path/ 
+
+  # (Old, keep for ref) buy: 
+  #   output: true
+  #   permalink: /buy/:path/
+  # sell:
+  #   output: true
+  #   permalink: /sell/:path/
+  # governance:
+  #   output: true
+  #   permalink: /governance/:path/
+
   pages:
     output: true
     permalink: /:path/
@@ -165,6 +300,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - docker-compose.yml
+  - staging-ficam-playbooks
 assets:
   autoprefixer:
     browsers:
