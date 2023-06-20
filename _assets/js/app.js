@@ -104,21 +104,3 @@ function collapseToggle(){
     event.stopPropagation();
   }
 }
-
-// Toggle Accordion Focus (content area)
-// function toggleFocus(){
-//   if (type === 'click' || (type === 'keydown' && event.keyCode === 13 || event.keyCode === 32) ) {
-//     // Loop through accordion button, setting the aria-expanded attribute to false(changes the icon to -)
-//     for(var i = 0;i < accordionbutton.length;i++){
-//       accordionbutton[i].setAttribute('aria-expanded','true');
-//     // }
-//     // // Loop through accordion content area, removing the hidden attribute to display the accordion body)
-//     // for(var i = 0;i < accordioncontent.length;i++){
-//       accordioncontent[i].setAttribute('tabindex','0');
-//       accordioncontent[i].removeAttribute('hidden');
-//     }
-
-//     event.preventDefault();
-//     event.stopPropagation();
-//   }
-// }
