@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "4.2.2" # pinned awaiting release of https://github.com/jekyll/jekyll/pull/9304 
+gem "jekyll", "4.3.0" # pinned awaiting release of https://github.com/jekyll/jekyll/pull/9304 
 gem "execjs", "2.7.0" # https://github.com/rails/execjs/issues/99
 gem "autoprefixer-rails"
 gem "webrick" # not included in jekyll directly until 4.3.0 https://github.com/jekyll/jekyll/pull/8524
@@ -21,6 +21,6 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 #gem "html-proofer", "~> 3.19", ">= 3.19.4"
-gem "html-proofer", "~> 3.18"
+gem "html-proofer", "~> 4.0", ">= 4.0.0"
 
 
